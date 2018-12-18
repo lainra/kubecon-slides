@@ -12,7 +12,13 @@ tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }
 
+// task execute(type:JavaExec) {
+//    main = mainClass
+//    classpath = sourceSets.main.runtimeClasspath
+// }
 
+apply plugin:'application'
+mainClassName = "com.sbueringer.kubecon.SlideDownloader"
 
 repositories {
         
